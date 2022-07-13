@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobLessonAlgo04v01Part01", "JobLessonAlgo04v01Part01\JobLessonAlgo04v01Part01.csproj", "{593875E5-6D25-43A3-8DBB-221A360E2A39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{593875E5-6D25-43A3-8DBB-221A360E2A39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{593875E5-6D25-43A3-8DBB-221A360E2A39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{593875E5-6D25-43A3-8DBB-221A360E2A39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{593875E5-6D25-43A3-8DBB-221A360E2A39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {96D0861E-682F-4AC3-845F-080FA7563A81}
+	EndGlobalSection
+EndGlobal
