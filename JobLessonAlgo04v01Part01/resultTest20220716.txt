@@ -1,0 +1,21 @@
+
+
+BenchmarkDotNet=v0.13.1, OS=Windows 10.0.22000
+AMD Ryzen 5 5600H with Radeon Graphics, 1 CPU, 12 logical and 6 physical cores
+.NET SDK=6.0.302
+  [Host]     : .NET 6.0.7 (6.0.722.32202), X64 RyuJIT  [AttachedDebugger]
+  DefaultJob : .NET 6.0.7 (6.0.722.32202), X64 RyuJIT
+
+
+|                Method | sizeMassive |     Mean |    Error |   StdDev |      Max |      Min | Rank |  Gen 0 | Allocated |
+|---------------------- |------------ |---------:|---------:|---------:|---------:|---------:|-----:|-------:|----------:|
+|      SearchValueByFor |       10000 | 27.62 ns | 0.519 ns | 1.048 ns | 30.42 ns | 25.89 ns |    2 | 0.0076 |      64 B |
+|  SearchIndexInMassive |       10000 | 33.88 ns | 0.681 ns | 0.668 ns | 34.78 ns | 32.64 ns |    3 | 0.0181 |     152 B |
+|       SearchInMassive |       10000 | 33.43 ns | 0.669 ns | 0.870 ns | 35.47 ns | 31.74 ns |    3 | 0.0181 |     152 B |
+|    SearchValueHashset |       10000 | 25.78 ns | 0.540 ns | 0.702 ns | 27.32 ns | 24.70 ns |    1 | 0.0076 |      64 B |
+| SearchContainsHashset |       10000 | 26.94 ns | 0.481 ns | 0.625 ns | 28.59 ns | 26.14 ns |    2 | 0.0076 |      64 B |
+|      SearchValueByFor |      100000 | 26.09 ns | 0.530 ns | 0.689 ns | 27.74 ns | 25.24 ns |    1 | 0.0076 |      64 B |
+|  SearchIndexInMassive |      100000 | 34.43 ns | 0.700 ns | 1.004 ns | 36.88 ns | 32.99 ns |    3 | 0.0181 |     152 B |
+|       SearchInMassive |      100000 | 34.29 ns | 0.710 ns | 1.206 ns | 38.02 ns | 32.43 ns |    3 | 0.0181 |     152 B |
+|    SearchValueHashset |      100000 | 25.31 ns | 0.524 ns | 0.438 ns | 26.37 ns | 24.89 ns |    1 | 0.0076 |      64 B |
+| SearchContainsHashset |      100000 | 28.22 ns | 0.565 ns | 0.879 ns | 30.20 ns | 26.93 ns |    2 | 0.0076 |      64 B |
