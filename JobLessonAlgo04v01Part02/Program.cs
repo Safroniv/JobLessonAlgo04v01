@@ -68,3 +68,38 @@ public class NodeInfo
     public TreeNode? Node { get; set; }
 }
 
+public class Tree : ITree
+{
+    private TreeNode? _root;
+
+    public TreeNode Root
+    {
+        get { return _root; }
+        set { _root = value; }
+    }
+    
+    public void AddItem(int value)
+    {
+        throw new NotImplementedException();
+    }
+
+    public TreeNode GetNodeByValue(int value)
+    {
+        throw new NotImplementedException();
+    }
+
+    public TreeNode GetRoot()
+    {
+        return Root;
+    }
+
+    public void PrintTree()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void RemoveItem(int value)
+    {
+        throw new NotImplementedException();
+    }
+}
